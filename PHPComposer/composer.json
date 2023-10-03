@@ -1,0 +1,15 @@
+{
+    "name": "php/biblioteca",
+    "description": "Este e o  meu  primeiro Projeto php com Composer",
+    "autoload": {
+        "psr-4": {
+            "Php\\Biblioteca\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Joao Lima"
+        }
+    ],
+    "require": {}
+}
