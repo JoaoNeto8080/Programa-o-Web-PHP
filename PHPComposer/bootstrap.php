@@ -9,8 +9,14 @@ $router = new \Php\Biblioteca\Router($method, $path);
 
 #$router->get("/", function(){ echo "Óla mundo!";});
 
-$router->get("/saudacao/{nome}", 
+$router->get("/", 
     'Php\Biblioteca\Controller\HomeController@index'
+);
+$router->get("/categoria/inserir", 
+    'Php\Biblioteca\Controller\CategoriaController@inserir'
+);
+$router->post("/categoria/gravar", 
+    'Php\Biblioteca\Controller\CategoriaController@gravar'
 );
 
 $resultado = $router->handler();
